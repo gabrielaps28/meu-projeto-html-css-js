@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #000000;
+    color: #F6F6F6;
+    font-family: 'Fira Code', monospace;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 37px;
+    font-weight: 600;
+}
+
+.titulo__azul {
+    color: white;
+    font-weight: 600;
+    
+    
+}
+
+.titulo__roxo {
+    color: #6333E7;
+    font-weight: 600;
+}
+
+.apresentacao {
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.apresentacao__conteudo {
+
+    width: 100%;
+    max-width: 615px;
+    display: flex; /* <-- Adicione isso */
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    text-align: left;
+}
+
+.apresentacao__conteudo__texto__final {
+    margin: 16px 0;
+    text-align: left;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.apresentacao__links__link {
+    flex: 1 1 109px;
+    max-width: 150px;
+    padding: 10px 5px;
+    border: 1px solid #6333E7;
+    border-radius: 0;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.apresentacao__links__link:hover {
+    background-color: #6333E7;
+    color: white;
+    border: 1px solid #6333E7;
+}
+
+
+.container_foto {
+    position: relative;
+    width: 286px;
+    height: 430px;
+    margin: 0 auto;
+}
+
+.apresentacao__imagem {
+    width: 286px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+/* BORDAS */
+.borda_1,
+.borda_2 {
+    position: absolute;
+    border: 1px solid #7a5cff;
+    width: 353px;
+    height: 387px;
+    z-index: 1;
+}
+
+.borda_1 {
+    top: -50px;
+    left: -20px;
+}
+
+.borda_2 {
+    top: 70px;
+    left: -45px;
+}
+
+
+@media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column;
+        margin: 5% 10%;
+    }
+
+    .apresentacao__conteudo {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .apresentacao__links {
+        justify-content: center;
+    }
+
+    .apresentacao__links__link {
+        max-width: 100%;
+        flex: 1 1 auto;
+    }
+
+    .container_foto {
+        transform: scale(0.9);
+    }
+
+    .borda_1,
+    .borda_2 {
+        display: none;
+    }
+
+    .apresentacao__imagem {
+        width: 100%;
+        height: auto;
+    }
+}
+

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: #0C0F14;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+
+}
+
+.botao {
+    color: white;
+    font-family: 'Fira code';
+    
+}
+
+.icone {
+    color: black;
+    font-family: 'Fira code';
+    background-color: #6333E7;
+    width: 50px;
+    height: 50px;        
+    text-align: center;
+    border-radius: 0;     
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0;          
+    display: flex;        
+    align-items: center;  
+    justify-content: center; 
+    text-decoration: none;
+    
+
+}
+
